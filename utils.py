@@ -19,9 +19,3 @@ class PID:
         output = self.kp * error + self.ki * self.integral + self.kd * derivative
         self.previous_error = error
         return output
-
-def grid(W, H, L, resolution):
-    nx = int(W / resolution)
-    ny = int(H / resolution)
-    nz = int(L / resolution)
-    return nx, ny, nz
